@@ -1,8 +1,7 @@
 <template>
     <!-- Navbar -->
     <nav
-        class="flex items-center justify-between  lg:bg-transparent bg-[#06918D] lg:absolute top-0 w-full z-50 py-5 lg:py-10">
-        
+        class="container flex items-center justify-between  lg:bg-transparent bg-[#06918D] lg:absolute lg:left-1/2 -translate-x-1/2 top-0 w-full z-50 py-5 lg:py-10">
         <div class="w-full md:block flex-grow lg:flex lg:items lg:w-auto text-right mr-1">
             <div class="text-sm lg:flex-grow">
                 <a v-for="(item, index) in navigations1" :key="index" href="item.link"
@@ -56,12 +55,6 @@ export default {
                 {
                     "label": "Home ",
                     "link": "/Home"
-                }
-            ],
-            navigations: [
-                {
-                    "label": "Home ",
-                    "link": "/Home"
                 },
                 {
                     "label": "Program Studi",
@@ -71,26 +64,28 @@ export default {
                     "label": "Data Siswa",
                     "link": "/Data Siswa"
                 },
+            ],
+            navigations: [
                 {
                     "label": "Organisasi",
                     "link": "/Organisasi"
                 },
-                // {
-                //     "label": "Info",
-                //     "link": "/Info"
-                // },
-                // {
-                //     "label": "Berita",
-                //     "link": "/Berita"
-                // },
-                // {
-                //     "label": "Tentang",
-                //     "link": "/Tentang"
-                // },
-                // {
-                //     "label": "Kontak",
-                //     "link": "/Kontak"
-                // }
+                {
+                    "label": "Info",
+                    "link": "/Info"
+                },
+                {
+                    "label": "Berita",
+                    "link": "/Berita"
+                },
+                {
+                    "label": "Tentang",
+                    "link": "/Tentang"
+                },
+                {
+                    "label": "Kontak",
+                    "link": "/Kontak"
+                }
             ]
         }
     },
